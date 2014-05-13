@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+
+  li { 
+    float: left; 
+    margin: 10px;
+  }
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+#languages-buttons {
+  overflow: hidden;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}

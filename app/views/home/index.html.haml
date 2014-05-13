@@ -1,0 +1,18 @@
+%h1= "Open Source for Beginners"
+
+%p= "Want to contribute to Open Source projects, but don't know where to start? Look no further!"
+
+#search
+= form_tag("/search", method: "get") do
+  = label_tag(:q, "Pick a language:")
+  = text_field_tag(:q)
+  = submit_tag("Go!")
+
+%h4= "Popular Languages"
+#languages-buttons
+  %ul
+    %li= "Ruby"
+    %li= "JavaScript"
+    %li= "Python"
+    %li= "C"
+    %li= "Java"
