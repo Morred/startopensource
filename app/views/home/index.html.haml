@@ -1,18 +1,28 @@
-%h1= "Open Source for Beginners"
+#home
+  %h1= "Open Source for Beginners"
 
-%p= "Want to contribute to Open Source projects, but don't know where to start? Look no further!"
+  %p= "Want to contribute to Open Source projects, but don't know where to start? Look no further!"
+  %p= "This is a collection of beginner friendly open source projects to make it easier for you to get started."
 
-#search
-= form_tag("/search", method: "get") do
-  = label_tag(:q, "Pick a language:")
-  = text_field_tag(:q)
-  = submit_tag("Go!")
+  #search
+  = form_tag("/search", method: "get") do
+    = label_tag(:q, "Pick a language:")
+    = text_field_tag(:q)
+    = submit_tag("Go!")
 
-%h4= "Popular Languages"
-#languages-buttons
-  %ul
-    %li= "Ruby"
-    %li= "JavaScript"
-    %li= "Python"
-    %li= "C"
-    %li= "Java"
+  %h3= "Popular Languages"
+  #languages-buttons
+    %ul
+      %li= "Ruby"
+      %li= "JavaScript"
+      %li= "Python"
+      %li= "C"
+      %li= "Java"
+
+  %h3= "Popular Projects"
+  #popular-projects
+    - @projects.each do |project|
+      .project 
+        %h4= project.name
+        %p= project.description
+        %span= project.language

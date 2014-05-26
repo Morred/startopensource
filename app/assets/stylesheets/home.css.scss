@@ -1,23 +1,44 @@
-body {
+#home {
   text-align: center;
-}
 
-ul {
-  list-style-type: none;
+  ul {
+    list-style-type: none;
 
-  li { 
-    float: left; 
-    margin: 10px;
+    li { 
+      float: left; 
+      margin: 10px;
+    }
   }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  #languages-buttons {
+    overflow: hidden;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #popular-projects {
+    .project {
+      border: 1px solid black;
+      width: 600px;
+      padding: 0 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      overflow: hidden;
+
+      span {
+        float: right;
+        position: relative;
+        bottom: 70px;
+      }
+
+    }
+  }
+
 }
 
-h4 {
-  margin-bottom: 0;
-}
-
-#languages-buttons {
-  overflow: hidden;
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-}
