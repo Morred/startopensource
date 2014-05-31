@@ -1,4 +1,4 @@
-#navbar {
+#navbar, #footer {
   overflow: hidden;
   background-color: #1f1f1f;
   color: #fff;
@@ -7,10 +7,15 @@
   ul {
     margin-top: 0;
     list-style-type: none;
+    margin-right: 20px;
 
     li {
-      float: left;
+      float: right;
       margin: 15px;
     }
   }
+}
+
+#footer {
+  margin-top: 20px;
 }

@@ -9,22 +9,14 @@
         = text_field_tag(:language, nil, placeholder: 'Pick a language', class: 'form-control')
         = submit_tag('Go!', class: 'btn btn-default')
 
-  .info
+  #info
     %p= "Want to learn more?"
     %button.btn.btn-default
-      %span= "Read our FAQ"
+      %span= "Read the FAQ"
 
-  %h3= "Popular Languages"
-  #languages-buttons
-    %ul
-      %li= "Ruby"
-      %li= "JavaScript"
-      %li= "Python"
-      %li= "C"
-      %li= "Java"
-
-  %h3= "Popular Projects"
   #popular-projects
+    %h2= "Popular Projects"
+
     - @projects.each do |project|
       .project 
         %h4= project.name
