@@ -14,7 +14,7 @@
  *= require_tree .
  *= require_self
  */
-
+ @import url(http://fonts.googleapis.com/css?family=Titillium+Web);
  @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../assets/glyphicons-halflings-regular.eot');
