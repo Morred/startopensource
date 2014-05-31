@@ -1,14 +1,18 @@
 #home
-  %h1= "Open Source for Beginners"
+  .center.hero-unit
+    %h1= "Open Source for Everyone"
+    %p= "This is a collection of beginner friendly open source projects to make it easier for you to start contributing."
 
-  %p= "Want to contribute to Open Source projects, but don't know where to start? Look no further!"
-  %p= "This is a collection of beginner friendly open source projects to make it easier for you to get started."
+    #search
+      = form_tag("/search", method: "get", class: 'form-inline') do
+        -#= label_tag(:language, "Pick a language:")
+        = text_field_tag(:language, nil, placeholder: 'Pick a language', class: 'form-control')
+        = submit_tag('Go!', class: 'btn btn-default')
 
-  #search
-  = form_tag("/search", method: "get") do
-    = label_tag(:q, "Pick a language:")
-    = text_field_tag(:q)
-    = submit_tag("Go!")
+  .info
+    %p= "Want to learn more?"
+    %button.btn.btn-default
+      %span= "Read our FAQ"
 
   %h3= "Popular Languages"
   #languages-buttons

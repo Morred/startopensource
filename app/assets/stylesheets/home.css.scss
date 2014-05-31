@@ -10,8 +10,42 @@
     }
   }
 
-  h4 {
-    margin-bottom: 0;
+  .hero-unit {
+    background-color: #861D84;
+    color: white;
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    #search {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .info {
+    background-color: #ddd;
+    padding: 20px;
+
+    button {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      display: inline;
+    }
   }
 
   #languages-buttons {
