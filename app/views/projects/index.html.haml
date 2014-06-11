@@ -1,4 +1,8 @@
-- @projects.each do |project|
-  .project
-    = project.name
-    = project.language
+.stripe
+  %h2= "Projects in #{@language}"
+#projects
+  - @projects.each do |project|
+    .project 
+      %h4= project.name
+      %p= project.description
+      %span= project.language
