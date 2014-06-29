@@ -1,5 +1,8 @@
 class Project < ActiveRecord::Base
-  validates :name, :url, :language, :description, presence: true
+  validates :name, :url, :description, presence: true
+
+  has_many :project_languages
+  has_many :languages, through: :project_languages
 
   def self.search(search_params)
     # implement proper search -> check if search_params in languages!
