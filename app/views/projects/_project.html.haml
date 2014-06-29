@@ -1,0 +1,7 @@
+- case view
+- when :index
+  .project_list
+    .project 
+      %h4= project.name
+      %p= project.description
+      %span= render project.languages, view: :badge

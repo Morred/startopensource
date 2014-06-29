@@ -11,8 +11,4 @@
   #popular-projects
     %h2= "Popular Projects"
 
-    - @projects.each do |project|
-      .project 
-        %h4= project.name
-        %p= project.description
-        %span= project.language
+    = render @projects, view: :index

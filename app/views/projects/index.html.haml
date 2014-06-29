@@ -1,8 +1,5 @@
 .stripe
-  %h2= "Projects in #{@language}"
+  %h2= "Projects in #{@search_language}"
 #projects
-  - @projects.each do |project|
-    .project 
-      %h4= project.name
-      %p= project.description
-      %span= project.language
+  = render @projects, view: :index
+    

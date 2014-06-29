@@ -1,6 +1,10 @@
 class ProjectsController < ApplicationController
   def index
     @projects = Project.search(params[:language])
-    @language = params[:language].capitalize
+    @search_language = params[:language].capitalize
+  end
+
+  def show
+
   end
 end
