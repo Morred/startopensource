@@ -4,16 +4,22 @@
   color: #fff;
   margin: 0;
 
-  .logo {
-    float: left;
-    margin: 3px 5px 5px 15px;
-  }
+  #logo {
+    .logo-image {
+      float: left;
+      margin: 3px 5px 5px 15px;
+    }
 
-  .title {
-    float: left;
-    margin: 10px;
-    font-size: 20px;
-    font-family: 'Titillium Web', serif;
+    .logo-title {
+      float: left;
+      margin: 10px;
+      font-size: 20px;
+      font-family: 'Titillium Web', serif;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 
   ul {

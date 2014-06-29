@@ -7,12 +7,6 @@
       %form{ action: "/projects", method: "get", class: "form-inline" }
         = text_field_tag(:language, nil, placeholder: 'Pick a language', class: 'form-control')
         = submit_tag('Go!', class: 'btn btn-default', name: nil)
-        -#= form_tag("/projects", method: "get", class: 'form-inline') do
-
-  #info
-    -#%p= "Want to learn more?"
-    -#%button.btn.btn-default
-      -#%span= "Read the FAQ"
 
   #popular-projects
     %h2= "Popular Projects"
