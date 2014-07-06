@@ -3,6 +3,7 @@ class Project < ActiveRecord::Base
 
   has_many :project_languages
   has_many :languages, through: :project_languages
+  has_many :issues
 
   def self.search(search_language)
     if search_language
