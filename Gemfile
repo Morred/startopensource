@@ -24,6 +24,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'simple_enum'
+gem 'github_api'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0',          group: :doc

@@ -1,7 +1,7 @@
 - case view
 - when :index
   .project_list
-    .project 
-      %h4= project.name
+    .project-listed 
+      %h4= link_to project.name, project_path(project)
       %p= project.description
       %span= render project.languages, view: :badge

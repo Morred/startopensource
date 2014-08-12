@@ -1,0 +1,9 @@
+- project ||= @project
+.stripe
+  %h2= project.name
+.project
+  .description
+    %p= project.description
+    %button.github
+      = image_tag("octocat.png", size: "22x22")
+      %span= "View on GitHub"

@@ -19,7 +19,7 @@ $green: #69b828;
   margin-left: auto;
   margin-right: auto;
 
-  .project {
+  .project-listed {
     border: 1px solid #ddd;
     padding: 10px 10px 10px 20px;
     margin-bottom: 10px;
@@ -45,4 +45,24 @@ $green: #69b828;
 
   }
 
+}
+
+.project {
+  .description {
+    text-align: center;
+    font-size: 18px;
+
+    button {
+      font-size: 16px;
+      padding: 5px 10px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      border: 1px outset buttonface;
+
+      span {
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+    }
+  }
 }
