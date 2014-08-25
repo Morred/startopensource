@@ -1,3 +1,17 @@
-// Place all the styles related to the issues controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.issue-list {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .issue-listed {
+    border: 1px solid #ddd;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

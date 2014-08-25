@@ -14,50 +14,47 @@ $green: #69b828;
   }
 }
 
-#projects {
+.project-list {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
 
   .project-listed {
     border: 1px solid #ddd;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 20px 20px;
     margin-bottom: 10px;
     text-align: left;
     overflow: hidden;
 
+    .project-title > a {
+      color: #333;
+      font-size: 20px;
+    }
+
     p {
       margin-bottom: 0;
     }
-
-    span {
-      float: right;
-      position: relative;
-      bottom: 70px;
-      background-color: $green;
-      color: white;
-      padding: 5px 10px;
-      margin-top: 10px;
-
-      -webkit-border-radius: 4px;
-      border-radius: 4px;
-    }
-
   }
-
 }
 
 .project {
+  .project-languages {
+    text-align: center;
+    overflow: hidden;
+  }
   .description {
     text-align: center;
     font-size: 18px;
 
     button {
       font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 5px 10px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
       border: 1px outset buttonface;
+      background-color: #efefef;
 
       span {
         vertical-align: middle;

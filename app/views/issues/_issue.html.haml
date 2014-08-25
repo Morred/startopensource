@@ -1,0 +1,10 @@
+- case view
+
+- when :index_project
+  .issue-listed
+    %h4.issue-title= issue.title
+
+- when :index_language
+  .issue-listed
+    %h4.issue-title= issue.title
+    %p= issue.project.name

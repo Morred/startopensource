@@ -4,11 +4,11 @@
     %p= "This is a collection of beginner friendly open source projects to make it easier for you to start contributing."
 
     #search
-      %form{ action: "/projects", method: "get", class: "form-inline" }
+      %form{ action: "/issues", method: "get", class: "form-inline" }
         = text_field_tag(:language, nil, placeholder: 'Pick a language', class: 'form-control')
         = submit_tag('Go!', class: 'btn btn-default', name: nil)
 
-  #popular-projects
+  .project-list
     %h2= "Popular Projects"
 
     = render @projects, view: :index
