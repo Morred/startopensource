@@ -1,7 +1,6 @@
-$green: #69b828;
+@import "colors.scss";
 
 .language-badge {
-  float: left;
   background-color: $green;
   color: white;
   padding: 5px 10px;
@@ -10,3 +9,6 @@ $green: #69b828;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
+
+.center { float: center; }
+.left { float: left; }

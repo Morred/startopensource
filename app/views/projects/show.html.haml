@@ -2,12 +2,15 @@
 .stripe
   %h2= project.name
 .project
-  .project-languages
-    = render project.languages, view: :badge
   .description
     %p= project.description
-    %button.btn.btn-default.github
+  .github
+    %button.btn.btn-default
       = image_tag("octocat.png", size: "22x22")
       %span= "View on GitHub"
+  .project-languages
+    = render project.languages, view: :badge_center
+
+
   .issue-list
     = render @issues, view: :index_project

@@ -1,4 +1,7 @@
 - case view
-- when :badge
-  %span.language-badge
+- when :badge_center
+  %span.language-badge.center
+    = language.name
+- when :badge_left
+  %span.language-badge.left
     = language.name

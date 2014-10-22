@@ -3,4 +3,4 @@
   .project-listed 
     %h4.project-title= link_to project.name, project_path(project)
     %p= project.description
-    = render project.languages, view: :badge
+    = render project.languages, view: :badge_left
