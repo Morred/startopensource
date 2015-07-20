@@ -17,9 +17,10 @@ gem 'jquery-rails'
 gem 'simple_enum'
 
 # Github API and caching
-gem 'dalli'
 gem 'httparty'
 gem 'github-search', git: "https://github.com/Morred/github-search.git"
 
-
+# Background processing
+gem 'sidekiq'
+gem 'sinatra', :require => nil
 
