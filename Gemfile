@@ -17,8 +17,9 @@ gem 'jquery-rails'
 gem 'simple_enum'
 
 # Github API and caching
-# gem 'github_api'
 gem 'dalli'
 gem 'httparty'
 gem 'github-search', git: "https://github.com/Morred/github-search.git"
+
+
 
