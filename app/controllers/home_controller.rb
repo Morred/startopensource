@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @projects = Project.all.sample(2)
+    @languages = Language.all.pluck(:name).sort
   end
 end

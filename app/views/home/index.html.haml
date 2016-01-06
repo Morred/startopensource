@@ -1,14 +1,18 @@
 #home
-  .center.hero-unit
-    %h1= "Open Source for Everyone"
-    %p= "A collection of beginner friendly open source projects to make it easier for you to start contributing."
+  %h1= "Want to start contributing to Open Source?"
 
-    #search
-      %form{ action: "/issues", method: "get", class: "form-inline" }
-        = text_field_tag(:language, nil, placeholder: 'Pick a language', class: 'form-control')
-        = submit_tag('Go!', class: 'btn btn-default', name: nil)
+  .language-list
+    %h2= "Find beginner friendly issues in"
 
-  .project-list
-    %h2= "Popular Projects"
+    - @languages.each do |language|
+      .language-badge
+        = language
 
-    = render @projects, view: :index
+  .info.col-xs-12.col-sm-12.col-md-12.col-lg-12
+    .contributor.col-xs-12.col-sm-6.col-md-6.col-lg-6
+      %button.btn.btn-default.col-xs-7.col-xs-offset-5
+        = "I'm a beginner. What should I do?"
+
+    .maintainer.col-xs-12.col-sm-6.col-md-6.col-lg-6
+      %button.btn.btn-default.col-xs-7
+        = "I'm a maintainer. How can I help?"
