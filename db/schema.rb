@@ -13,27 +13,30 @@
 
 ActiveRecord::Schema.define(version: 20140706085358) do
 
-  create_table "issues", force: true do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "issues", force: :cascade do |t|
     t.integer  "project_id"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "languages", force: true do |t|
+  create_table "languages", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "project_languages", force: true do |t|
+  create_table "project_languages", force: :cascade do |t|
     t.integer  "project_id"
     t.integer  "language_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "projects", force: true do |t|
+  create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.string   "url"
     t.string   "description"

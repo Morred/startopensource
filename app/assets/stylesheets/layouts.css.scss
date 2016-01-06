@@ -1,43 +1,50 @@
-#navbar, #footer {
-  overflow: hidden;
-  background-color: #1f1f1f;
-  color: #fff;
-  margin: 0;
+@import "colors.scss";
 
-  #logo {
-    .logo-image {
-      float: left;
-      margin: 3px 5px 5px 15px;
-      padding-left: 10px;
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  #navbar, #footer {
+    overflow: hidden;
+    background-color: $black;
+    color: $white;
+    margin: 0;
+
+    #logo {
+      .logo-image {
+        float: left;
+        margin: 3px 5px 5px 15px;
+        padding-left: 10px;
+      }
+
+      .logo-title {
+        float: left;
+        margin: 10px;
+        font-size: 20px;
+        font-family: 'Titillium Web', sans-serif;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
 
-    .logo-title {
-      float: left;
-      margin: 10px;
-      font-size: 20px;
-      font-family: 'Titillium Web', serif;
-      a {
-        text-decoration: none;
-        color: white;
+    ul {
+      margin-top: 0;
+      list-style-type: none;
+      margin-right: 20px;
+
+      li {
+        float: right;
+        margin: 15px;
       }
     }
   }
 
-  ul {
-    margin-top: 0;
-    list-style-type: none;
-    margin-right: 20px;
-
-    li {
-      float: right;
-      margin: 15px;
-    }
+  #footer {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
-}
 
-#footer {
-  margin-top: 20px;
-  // position: absolute;
-  // bottom: 0;
-  // width: 100%;
 }
