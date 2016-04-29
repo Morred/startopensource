@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @languages = Language.all.pluck(:name).sort
+    @language_names = Language.all.pluck(:name).sort
   end
 end

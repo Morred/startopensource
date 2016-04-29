@@ -4,9 +4,8 @@
   .language-list
     %h2= "Find beginner friendly issues in"
 
-    - @languages.each do |language|
-      .language-badge
-        = language
+    - @language_names.each do |language_name|
+      = link_to language_name, issues_path(language_name: language_name)
 
   .info.col-xs-12.col-sm-12.col-md-12.col-lg-12
     .contributor.col-xs-12.col-sm-6.col-md-6.col-lg-6

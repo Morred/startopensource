@@ -1,7 +1,7 @@
 class IssuesController < ApplicationController
 
-  def index 
-    @issues = Issue.search(params[:language])
-    @search_language = params[:language].capitalize
+  def index
+    @issues = Issue.search(params[:language_name])
+    @search_language = params[:language_name]
   end
 end
