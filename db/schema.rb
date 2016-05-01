@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140706085358) do
+ActiveRecord::Schema.define(version: 20160501074317) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,19 +19,22 @@ ActiveRecord::Schema.define(version: 20140706085358) do
   create_table "issues", force: :cascade do |t|
     t.integer  "project_id"
     t.string   "title"
+    t.string   "url"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "issues_languages", force: :cascade do |t|
+    t.integer "issue_id"
+    t.integer "language_id"
+  end
+
+  add_index "issues_languages", ["issue_id"], name: "index_issues_languages_on_issue_id", using: :btree
+  add_index "issues_languages", ["language_id"], name: "index_issues_languages_on_language_id", using: :btree
 
   create_table "languages", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "project_languages", force: :cascade do |t|
-    t.integer  "project_id"
-    t.integer  "language_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +43,7 @@ ActiveRecord::Schema.define(version: 20140706085358) do
     t.string   "name"
     t.string   "url"
     t.string   "description"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
