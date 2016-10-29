@@ -5,6 +5,7 @@ class CreateIssues < ActiveRecord::Migration
       t.string :title
       t.string :url
       t.text :body
+      t.integer :github_issue_id
 
       t.timestamps
     end

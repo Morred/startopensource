@@ -1,5 +1,5 @@
 class Issue < ActiveRecord::Base
-  validates :project_id, :title, :url, presence: true
+  validates :project_id, :title, :url, :github_issue_id, presence: true
 
   belongs_to :project
   has_and_belongs_to_many :languages
