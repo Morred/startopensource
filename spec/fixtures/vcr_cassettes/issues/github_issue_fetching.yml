@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/search/issues?q=%20repo:Morred/github-search%20label:startopensource
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 29 Oct 2016 06:02:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '8'
+      X-Ratelimit-Reset:
+      - '1477720978'
+      Cache-Control:
+      - no-cache
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Accept-Encoding
+      X-Served-By:
+      - 7f48e2f7761567e923121f17538d7a6d
+      X-Github-Request-Id:
+      - 9994621C:2ADA:15430563:58143B7F
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_count":2,"incomplete_results":false,"items":[{"url":"https://api.github.com/repos/Morred/github-search/issues/2","repository_url":"https://api.github.com/repos/Morred/github-search","labels_url":"https://api.github.com/repos/Morred/github-search/issues/2/labels{/name}","comments_url":"https://api.github.com/repos/Morred/github-search/issues/2/comments","events_url":"https://api.github.com/repos/Morred/github-search/issues/2/events","html_url":"https://github.com/Morred/github-search/issues/2","id":54452074,"number":2,"title":"This
+        is another test issue.","user":{"login":"Morred","id":4008608,"avatar_url":"https://avatars.githubusercontent.com/u/4008608?v=3","gravatar_id":"","url":"https://api.github.com/users/Morred","html_url":"https://github.com/Morred","followers_url":"https://api.github.com/users/Morred/followers","following_url":"https://api.github.com/users/Morred/following{/other_user}","gists_url":"https://api.github.com/users/Morred/gists{/gist_id}","starred_url":"https://api.github.com/users/Morred/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Morred/subscriptions","organizations_url":"https://api.github.com/users/Morred/orgs","repos_url":"https://api.github.com/users/Morred/repos","events_url":"https://api.github.com/users/Morred/events{/privacy}","received_events_url":"https://api.github.com/users/Morred/received_events","type":"User","site_admin":false},"labels":[{"id":171641898,"url":"https://api.github.com/repos/Morred/github-search/labels/startopensource","name":"startopensource","color":"bfe5bf","default":false}],"state":"open","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":1,"created_at":"2015-01-15T14:02:14Z","updated_at":"2016-10-29T05:35:28Z","closed_at":null,"body":"#ruby
+        #javascript\r\n\r\nThis is another test issue.\r\n","score":1.0},{"url":"https://api.github.com/repos/Morred/github-search/issues/1","repository_url":"https://api.github.com/repos/Morred/github-search","labels_url":"https://api.github.com/repos/Morred/github-search/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/Morred/github-search/issues/1/comments","events_url":"https://api.github.com/repos/Morred/github-search/issues/1/events","html_url":"https://github.com/Morred/github-search/issues/1","id":54451965,"number":1,"title":"This
+        is a test issue","user":{"login":"Morred","id":4008608,"avatar_url":"https://avatars.githubusercontent.com/u/4008608?v=3","gravatar_id":"","url":"https://api.github.com/users/Morred","html_url":"https://github.com/Morred","followers_url":"https://api.github.com/users/Morred/followers","following_url":"https://api.github.com/users/Morred/following{/other_user}","gists_url":"https://api.github.com/users/Morred/gists{/gist_id}","starred_url":"https://api.github.com/users/Morred/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Morred/subscriptions","organizations_url":"https://api.github.com/users/Morred/orgs","repos_url":"https://api.github.com/users/Morred/repos","events_url":"https://api.github.com/users/Morred/events{/privacy}","received_events_url":"https://api.github.com/users/Morred/received_events","type":"User","site_admin":false},"labels":[{"id":166208169,"url":"https://api.github.com/repos/Morred/github-search/labels/enhancement","name":"enhancement","color":"84b6eb","default":true},{"id":171641898,"url":"https://api.github.com/repos/Morred/github-search/labels/startopensource","name":"startopensource","color":"bfe5bf","default":false}],"state":"open","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":2,"created_at":"2015-01-15T14:01:13Z","updated_at":"2016-05-01T07:15:35Z","closed_at":null,"body":"#ruby\n\nThis is a test issue.\n","score":1.0}]}'
+    http_version: 
+  recorded_at: Sat, 29 Oct 2016 06:02:42 GMT
+recorded_with: VCR 3.0.3
