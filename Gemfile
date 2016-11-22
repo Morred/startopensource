@@ -30,4 +30,6 @@ group :development, :test do
   gem 'faker'
   gem 'webmock'
   gem 'vcr'
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
 end

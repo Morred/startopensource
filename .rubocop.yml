@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 2.2
+  Exclude:
+    - 'db/**/*'
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Metrics/MethodLength:
+  Max: 20
+Metrics/AbcSize:
+  Enabled: false
