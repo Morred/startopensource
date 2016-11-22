@@ -1,0 +1,13 @@
+all:
+  exclude:
+    - "db/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "log/**/*"
+github:
+  slug: Morred/startopensource
+  access_token: ENV["GITHUB_ACCESS_TOKEN"]
+  api_endpoint: https://api.github.com/
+  web_endpoint: https://github.com/
+max_warnings: 150
+verbose: false

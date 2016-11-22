@@ -1,0 +1,3 @@
+test:
+  post:
+    - if [ "$CI_PULL_REQUEST" == "" ]; then echo "CI_PULL_REQUEST is unset, skipping Pronto"; else PULL_REQUEST_ID=${CI_PULL_REQUEST##*/} bundle exec pronto run -f github_pr -c origin/master; fi
