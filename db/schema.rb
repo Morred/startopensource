@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160501074317) do
     t.string   "title"
     t.string   "url"
     t.text     "body"
+    t.integer  "github_issue_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
