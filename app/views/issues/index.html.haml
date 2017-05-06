@@ -1,4 +1,8 @@
 .stripe
   %h2= "Issues in #{@search_language}"
-.issue-list
-  = render @issues, view: :index_language
+- if @issues.present?
+  .issue-list
+    = render @issues, view: :index_language
+- else
+  .no-issues
+    = "There don't seem to be any open issues for this language right now :("
