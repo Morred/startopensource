@@ -5,9 +5,7 @@ class Issue < ActiveRecord::Base
   has_and_belongs_to_many :languages
 
   def self.search(search_language)
-    language = Language.where(name: search_language)
-    project_ids = ProjectLanguage.where(language: language).pluck(:project_id)
-    issues = Issue.where(project_id: project_ids)
+    language = Language.find_by(name: search_language)
+    language.present? ? language.issues : []
   end
-
 end
